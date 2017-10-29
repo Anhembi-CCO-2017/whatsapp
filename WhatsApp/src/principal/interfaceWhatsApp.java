@@ -5,6 +5,8 @@
  */
 package principal;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author foreach
@@ -74,6 +76,11 @@ public class interfaceWhatsApp extends javax.swing.JFrame {
         });
 
         novaMsg.setText("Nova msg");
+        novaMsg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                novaMsgActionPerformed(evt);
+            }
+        });
 
         seuNome.setText("Seu nome");
 
@@ -151,7 +158,9 @@ public class interfaceWhatsApp extends javax.swing.JFrame {
                 .addComponent(jRadioButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1))
-            .addComponent(jTextField1)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -187,7 +196,7 @@ public class interfaceWhatsApp extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel3))
                     .addComponent(jLabel1))
-                .addContainerGap(349, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -237,12 +246,16 @@ public class interfaceWhatsApp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void pesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisarActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_pesquisarActionPerformed
 
     private void pesquisarTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisarTxtActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_pesquisarTxtActionPerformed
+
+    private void novaMsgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novaMsgActionPerformed
+        
+    }//GEN-LAST:event_novaMsgActionPerformed
 
     /**
      * @param args the command line arguments

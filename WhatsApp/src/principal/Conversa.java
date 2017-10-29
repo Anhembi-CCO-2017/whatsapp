@@ -13,6 +13,9 @@ public class Conversa {
         this.onlineUltimaVez = onlineUltimaVez;
     }
 
+    public Conversa() {
+    }
+
     public static ArrayList<Mensagem> getListaMensagens() {
         return listaMensagens;
     }
