@@ -12,13 +12,38 @@ public class Conversa {
         this.contato = contato;
         this.onlineUltimaVez = onlineUltimaVez;
     }
+
+    public static ArrayList<Mensagem> getListaMensagens() {
+        return listaMensagens;
+    }
+
+    public static void setListaMensagens(ArrayList<Mensagem> listaMensagens) {
+        Conversa.listaMensagens = listaMensagens;
+    }
+
+    public String getContato() {
+        return contato;
+    }
+
+    public void setContato(String contato) {
+        this.contato = contato;
+    }
+
+    public String getOnlineUltimaVez() {
+        return onlineUltimaVez;
+    }
+
+    public void setOnlineUltimaVez(String onlineUltimaVez) {
+        this.onlineUltimaVez = onlineUltimaVez;
+    }
     
-    public void addConversa(ArrayList<Mensagem>listaMensagens, String autor, Mensagem mensagem){
+    
+    public void addMensagem(ArrayList<Mensagem>listaMensagens, String autor, Mensagem mensagem){
     
         listaMensagens.add(mensagem);
     }
     
-    public String buscarConversa(ArrayList<Mensagem>listaMensagens, String palavra){
+    public String buscarMensagem(ArrayList<Mensagem>listaMensagens, String palavra){
     
         String saida = "";
         for (Mensagem msg : listaMensagens) {
@@ -30,7 +55,7 @@ public class Conversa {
         
         return saida;
     }
-    public String retornarConversa(){
+    public String retornarMensagens(){
     
         String saida = "";
         
