@@ -30,6 +30,7 @@ public class interfaceWhatsApp extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuItem1 = new javax.swing.JMenuItem();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         Contato = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         pesquisarTxt = new javax.swing.JTextField();
@@ -142,8 +143,10 @@ public class interfaceWhatsApp extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(254, 254, 254));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("Você");
 
+        buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("Contato");
 
         jButton1.setText("Enviar");
@@ -294,6 +297,7 @@ public class interfaceWhatsApp extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Contato;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
